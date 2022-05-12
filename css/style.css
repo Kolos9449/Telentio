@@ -315,9 +315,6 @@ header .buttons button:hover {
   flex-direction: column;
   align-items: center;
 }
-.pricing .layout .pay:hover {
-  background: linear-gradient(90deg, #4E54C8 0%, #8F94FB 100%);
-}
 .pricing .layout .pay .head {
   align-items: center;
   display: flex;
@@ -345,11 +342,17 @@ header .buttons button:hover {
   color: rgba(52, 68, 97, 0.7);
 }
 .pricing .layout .pay button {
+  transition: 1s;
   color: rgba(78, 84, 200, 0.8);
   width: 168px;
   height: 42px;
   border: 1px solid rgba(78, 84, 200, 0.8);
   border-radius: 10px;
+}
+.pricing .layout .pay button:hover {
+  color: white;
+  background: linear-gradient(90deg, #4E54C8 0%, #8F94FB 100%);
+  border: 1px solid;
 }
 
 .email {

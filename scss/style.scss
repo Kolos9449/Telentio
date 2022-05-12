@@ -308,9 +308,6 @@ header{
       display: flex;
       flex-direction: column;
       align-items: center;
-      &:hover{
-        background: linear-gradient(90deg, #4E54C8 0%, #8F94FB 100%);
-      }
       .head{
         align-items: center;
         display: flex;
@@ -338,11 +335,17 @@ header{
         color: rgba(52, 68, 97, 0.7);
       }
       button{
+        transition: 1s;
         color: rgba(78, 84, 200, 0.8);
         width: 168px;
         height: 42px;
         border: 1px solid rgba(78, 84, 200, 0.8);
         border-radius: 10px;
+        &:hover{
+          color: white;
+          background: linear-gradient(90deg, #4E54C8 0%, #8F94FB 100%);
+          border: 1px solid;
+        }
       }
     }
   }
