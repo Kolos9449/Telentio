@@ -23,10 +23,11 @@ header {
 }
 header img {
   cursor: pointer;
-  width: 128px;
+  max-width: 128px;
 }
 header nav {
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
 }
 header nav ul {
   list-style: none;
@@ -34,7 +35,8 @@ header nav ul {
   justify-content: space-between;
 }
 header .buttons {
-  width: 150px;
+  max-width: 150px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   color: white;
@@ -55,20 +57,21 @@ header .buttons button:hover {
   flex-direction: column;
 }
 .intro .text {
-  height: 300px;
+  max-height: 300px;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
-.intro .text .big-text {
+.intro .text h2 {
   font-weight: 700;
-  width: 368px;
+  max-width: 368px;
   text-align: center;
   font-size: 24px;
 }
-.intro .text .small-text {
-  width: 571px;
+.intro .text span {
+  max-width: 571px;
   color: rgba(248, 249, 250, 0.6);
   text-align: center;
   letter-spacing: 0.2em;
@@ -76,8 +79,7 @@ header .buttons button:hover {
 .intro button {
   color: rgba(78, 84, 200, 0.8);
   background-color: white;
-  width: 168px;
-  height: 42px;
+  padding: 12px 50px;
   border-radius: 10px;
   transition: 1s;
 }
@@ -86,26 +88,21 @@ header .buttons button:hover {
   background: linear-gradient(90deg, #4E54C8 0%, #8F94FB 100%);
   border: 1px solid;
 }
-.intro .container {
+.intro ul {
   background-color: rgba(248, 249, 250, 0.4);
   border-radius: 21px;
-  width: 770px;
-  height: 212px;
-  display: flex;
-  justify-content: center;
-}
-.intro .container ul {
+  max-width: 770px;
+  padding: 23px 50px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  width: 668px;
+  grid-row-gap: 23px;
   list-style: none;
   align-items: center;
 }
 
-.middle {
+.achievement {
   background-color: #F2F2F2;
   height: 1440px;
   display: flex;
@@ -113,73 +110,72 @@ header .buttons button:hover {
   justify-content: space-evenly;
   align-items: center;
 }
-.middle span {
+.achievement span {
   text-align: center;
   color: #344461;
 }
-.middle .achievement {
+.achievement h2 {
+  color: #344461;
   font-weight: 700;
   font-size: 24px;
 }
-.middle .text {
+.achievement .text {
   color: rgba(52, 68, 97, 0.7);
   width: 571px;
   letter-spacing: 0.2em;
 }
-.middle ul {
+.achievement ul {
   font-weight: 700;
-  width: 527px;
+  max-width: 527px;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.middle ul li {
+.achievement ul li {
   display: flex;
   flex-direction: column;
 }
-.middle ul li span:first-child {
+.achievement ul li span:first-child {
   background: linear-gradient(90deg, #4E54C8 0%, #8F94FB 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   font-size: 32px;
 }
-.middle .features {
-  font-weight: 700;
-  font-size: 24px;
-}
-.middle .container {
-  height: 300px;
+.achievement .container {
+  max-width: 1170px;
+  max-height: 300px;
+  height: 100%;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
-.middle .container li {
+.achievement .container li {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 269px;
+  max-width: 269px;
 }
-.middle .container li img {
-  height: 64px;
+.achievement .container li img {
+  max-height: 64px;
 }
-.middle .container li span:nth-child(2) {
+.achievement .container li span:nth-child(2) {
   font-weight: 500;
   font-size: 18px;
 }
-.middle .container li span:last-child {
+.achievement .container li span:last-child {
   color: rgba(52, 68, 97, 0.7);
   letter-spacing: 0.2em;
 }
-.middle button {
+.achievement button {
   background: linear-gradient(90deg, #4E54C8 0%, #8F94FB 100%);
   border-radius: 10px;
-  width: 168px;
-  height: 42px;
+  padding: 12px 33px;
   transition: 1s;
 }
-.middle button:hover {
+.achievement button:hover {
   color: #4E54C8;
   background: white;
   border: 1px solid #4E54C8;
@@ -202,10 +198,10 @@ header .buttons button:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 369px;
+  max-width: 369px;
 }
 .middle-below .u-b ul li:first-child {
-  width: 104px;
+  max-width: 104px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -240,10 +236,10 @@ header .buttons button:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 369px;
+  max-width: 369px;
 }
 .middle-below .l-b ul li:first-child {
-  width: 76px;
+  max-width: 76px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -270,8 +266,7 @@ header .buttons button:hover {
 .middle-below button {
   background: linear-gradient(90deg, #4E54C8 0%, #8F94FB 100%);
   border-radius: 10px;
-  width: 168px;
-  height: 42px;
+  padding: 12px 35px;
   transition: 1s;
 }
 .middle-below button:hover {
@@ -288,13 +283,13 @@ header .buttons button:hover {
   flex-direction: column;
   align-items: center;
 }
-.pricing span:first-child {
+.pricing h2 {
   color: #344461;
   font-weight: 700;
   font-size: 24px;
 }
 .pricing span:nth-child(2) {
-  width: 569px;
+  max-width: 569px;
   letter-spacing: 0.2em;
   color: rgba(52, 68, 97, 0.7);
   text-align: center;
@@ -310,7 +305,8 @@ header .buttons button:hover {
   box-shadow: -5px 0px 10px rgba(143, 148, 251, 0.2), 5px 0px 10px rgba(143, 148, 251, 0.2);
   border-radius: 15px;
   height: 506px;
-  width: 269px;
+  max-width: 269px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -321,7 +317,7 @@ header .buttons button:hover {
   flex-direction: column;
 }
 .pricing .layout .pay .head span:first-child {
-  width: 115px;
+  max-width: 115px;
   text-align: center;
   font-weight: 500;
   font-size: 24px;
@@ -333,7 +329,7 @@ header .buttons button:hover {
 }
 .pricing .layout .pay span {
   letter-spacing: 0em;
-  width: 240px;
+  max-width: 240px;
   text-align: center;
   font-size: 16px;
   color: #344461;
@@ -344,8 +340,7 @@ header .buttons button:hover {
 .pricing .layout .pay button {
   transition: 1s;
   color: rgba(78, 84, 200, 0.8);
-  width: 168px;
-  height: 42px;
+  padding: 11px 59px;
   border: 1px solid rgba(78, 84, 200, 0.8);
   border-radius: 10px;
 }
@@ -369,7 +364,8 @@ header .buttons button:hover {
 }
 .email .in {
   justify-content: space-between;
-  width: 575px;
+  max-width: 575px;
+  width: 100%;
   display: flex;
   align-items: center;
 }
@@ -378,8 +374,7 @@ header .buttons button:hover {
   font-size: 16px;
   font-weight: 500;
   border: 0px;
-  width: 368px;
-  height: 48px;
+  padding: 15px 83px;
   background: #FFFFFF;
   border-radius: 10px;
 }
@@ -387,15 +382,13 @@ header .buttons button:hover {
   font-weight: 500;
   font-size: 16px;
   color: rgba(78, 84, 200, 0.8);
-  padding-left: 119px;
 }
 .email .in button {
   transition: 1s;
   font-weight: 500;
   color: rgba(78, 84, 200, 0.8);
   font-size: 16px;
-  width: 169px;
-  height: 48px;
+  padding: 14.5px 54px;
   background: #FFFFFF;
   border-radius: 10px;
 }
@@ -416,7 +409,8 @@ header .buttons button:hover {
 }
 .footer ul {
   justify-content: space-between;
-  width: 700px;
+  max-width: 700px;
+  width: 100%;
   display: flex;
 }
 .footer ul li {
